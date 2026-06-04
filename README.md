@@ -12,6 +12,8 @@ I build platforms that replace teams. 20+ years turning hard technical domains �
 
 Letting agents act on live systems is easy to demo and dangerous in production — a plausible-looking action can break things. The hard part isn't the LLM; it's making agent actions **trustworthy at scale**. That problem is what I build around.
 
+📝 **Read the deep-dive:** [How I made AI agents safe to run on real infrastructure](https://dev.to/markin/how-i-made-ai-agents-safe-to-run-on-real-infrastructure-cj5) — the eval/instrumentation loop behind Cmdop.
+
 ---
 
 ## 🚀 Flagship projects
