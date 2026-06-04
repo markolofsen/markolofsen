@@ -1,117 +1,63 @@
-# 👋 Mark Olofsen
+# 👋 Mark K. (Igor Korotin)
 
-**CTO | Full-Stack Architect | AI Integration Specialist**
+**Principal Product Architect / Technical CPO — applied-AI systems & developer platforms**
 
-20+ years building production systems across FinTech, Real Estate, Automotive, and SaaS. I architect scalable platforms, lead distributed teams, and integrate AI to solve real business problems.
+I build platforms that replace teams. 20+ years turning hard technical domains — agentic AI, payments infrastructure, developer tooling — into production systems, usually shipping solo or with a small senior team, then scaling them. My focus now: making LLM agents reliable enough to run in production, and the developer platforms around them.
 
----
-
-## 🚀 Latest Projects
-
-**[DjangoCFG](https://djangocfg.com/)** - Production-ready Django framework with type-safe configuration, Next.js admin, AI agents, WebSockets, and gRPC. Built for enterprise teams.
-
-**[Cmdop](https://cmdop.com/)** - AI-powered remote infrastructure management platform with real-time terminal access and intelligent workflow orchestration.
-
-**[Pixel Streaming Framework](https://github.com/markolofsen/metaeditor)** - React toolkit for Unreal Engine 5 Pixel Streaming, enabling browser-based 3D experiences.
+🌐 [cmdop.com](https://cmdop.com) · [djangocfg.com](https://djangocfg.com) · [linkedin.com/in/cmdop](https://linkedin.com/in/cmdop) · 📧 markolofsen@gmail.com
 
 ---
 
-## 💼 What I Do
+## 🧠 What I'm known for: making AI agents safe to run on real infrastructure
 
-**Enterprise Architecture** - Scalable SaaS/PaaS platforms, high-throughput systems, cloud-native applications
-
-**AI Integration** - LLM orchestration, GPT-4/Claude integration, AI-powered automation and business tools
-
-**FinTech Systems** - Cryptocurrency exchanges, trading platforms, real-time market data processing
-
-**3D Visualization** - Unreal Engine 5 integration, Pixel Streaming, browser-based 3D applications
-
-**Data Engineering** - High-performance parsers, real-time data pipelines, multi-source aggregation
+Letting agents act on live systems is easy to demo and dangerous in production — a plausible-looking action can break things. The hard part isn't the LLM; it's making agent actions **trustworthy at scale**. That problem is what I build around.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Flagship projects
 
-**Backend**
-```
-Python (Django, FastAPI) • Node.js • TypeScript • Go
-WebSockets • gRPC • REST/GraphQL APIs
-```
+### [Cmdop](https://cmdop.com) — AI agent & automation platform
+An **agent → gRPC → server → SDK** platform with a multi-agent runtime: agent-to-agent handoff, tool-calling governed by structured-output contracts, and human-in-the-loop control. Every tool call runs through an **eval/instrumentation loop** — the contract is validated before execution, the full trace is logged, runs are scored on tool-call validity / task success / unintended side-effects, and brittle steps get guardrails + automatic retry/failover. That loop is what turns "a demo that works once" into a runtime you can trust to widen agent autonomy. Drives thousands of concurrent agent sessions over persistent gRPC/WebSocket streams. Node.js / Python / React SDKs.
 
-**Frontend**
-```
-React • Next.js • TypeScript • Tailwind CSS
-Real-time WebRTC • Progressive Web Apps
-```
+### [DjangoCFG](https://djangocfg.com) — AI-native Django framework
+Replaces Django's settings model with a **type-safe Pydantic v2 system** and unifies Django + Next.js admin + payments + realtime into one architecture. It's **AI-native**: capabilities are exposed through an **MCP server**, so coding agents query what the framework can do and its schemas directly instead of scraping docs. Compresses first-deploy SaaS setup from weeks to ~30 seconds.
 
-**AI/ML**
-```
-OpenAI GPT-4 • Anthropic Claude • LangChain
-LLM Orchestration • Vector Databases • Fine-tuning
-```
-
-**Cloud & Infrastructure**
-```
-AWS • Azure • GCP • Docker • Kubernetes
-Terraform • CloudFlare • Auto-scaling
-```
-
-**Databases**
-```
-PostgreSQL • MongoDB • Redis • Elasticsearch
-ClickHouse • Vector DBs
-```
-
-**Specialized**
-```
-Unreal Engine 5 • Blockchain (Ethereum, TRON)
-High-Frequency Trading • WebRTC Streaming
-```
+### Earlier proof
+A **crypto exchange engine** (sub-50ms order matching, multi-asset wallets/ledgers) · an **AI real-estate ROI platform** for a Top-3 Canadian firm (~50% faster assessments, ~$150K/yr saved, ~40% more qualified leads) · an **AI Cloud IDE** (VS Code in browser, AI agents, MCP) · an **Unreal Engine 5 Pixel Streaming** framework.
 
 ---
 
-## 📦 Featured Open Source
+## 📦 Open source
 
-**[openrouter-commit](https://github.com/markolofsen/openrouter-commit)** ⭐ 20
-AI-powered commit message generator with 300+ LLM models
+| Project | What it is |
+|---------|-----------|
+| **[openrouter-commit](https://github.com/markolofsen/openrouter-commit)** ⭐ | AI commit-message generator, 300+ LLM models |
+| **[django-cfg](https://github.com/markolofsen/django-cfg)** ⭐ | Type-safe Django config (Pydantic v2) |
+| **[litellm2](https://github.com/markolofsen/litellm2)** | LLM orchestration wrapper |
+| **[carapis-parsers](https://github.com/markolofsen)** | High-performance automotive data parsers, 20+ platforms |
+| **[metaeditor](https://github.com/markolofsen/metaeditor)** | React toolkit for Unreal Engine 5 Pixel Streaming |
+| **[docusaurus-doctor](https://github.com/markolofsen/docusaurus-doctor)** | Diagnostic CLI for Docusaurus |
 
-**[django-cfg](https://github.com/markolofsen/django-cfg)** ⭐ 15
-Type-safe Django configuration framework with Pydantic v2
-
-**[litellm2](https://github.com/markolofsen/litellm2)** ⭐ 3
-Enhanced LLM orchestration wrapper
-
-**[docusaurus-doctor](https://github.com/markolofsen/docusaurus-doctor)**
-Diagnostic CLI for Docusaurus projects
-
-**[carapis-parsers](https://github.com/markolofsen)**
-High-performance automotive data parsers for 20+ platforms
+15+ open-source libraries total — API client generators, automation CLIs, dev tooling.
 
 ---
 
-## 🎯 Core Competencies
+## 🛠️ Stack
 
-- ✅ Full-stack architecture from concept to production
-- ✅ Distributed team leadership across US, Europe, Asia
-- ✅ AI integration for business automation and insights
-- ✅ Cloud optimization and cost reduction strategies
-- ✅ Real-time systems with sub-100ms latency
-- ✅ DevOps practices: CI/CD, IaC, monitoring
+**Applied AI** — LLM orchestration · agents / multi-agent runtimes · MCP · RAG · structured outputs · LLM evals & observability · HITL
+**Platform & distributed systems** — gRPC · WebSockets · high-load real-time · durable execution · idempotency/consistency · SDK & API design
+**Full-stack** — Python · Django · FastAPI · Pydantic v2 · Next.js · React · TypeScript · Node.js · Go · PostgreSQL · Redis · ClickHouse
+**Cloud** — AWS · GCP · Azure · Docker · Kubernetes · Cloudflare
+**FinTech / other** — exchange & trading systems · ledgers · Ethereum/TRON/DeFi · Unreal Engine 5 / WebRTC
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=markolofsen&theme=dark&hide_border=false&include_all_commits=false&count_private=false)
-
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=markolofsen&theme=dark&hide_border=false&layout=compact)
 
 ---
 
-**Currently:** Building AI-powered development tools and enterprise Django solutions
-**Interested in:** Technical leadership roles, CTO positions, innovative AI/SaaS projects
-**Open to:** Consulting, technical advisory, partnership on challenging projects
-
----
-
-<sub>Built 79+ production systems • Served 50+ countries • Expert in AI, Cloud, FinTech, 3D</sub>
+**Currently:** building applied-AI platforms (Cmdop, DjangoCFG) — agentic systems made reliable enough for production.
+**Open to:** Principal Product Architect / Head of Applied AI / Technical CPO / VP Engineering roles, and fractional / advisory engagements. Remote (APAC, UTC+8; strong EMEA overlap), open to relocation.
