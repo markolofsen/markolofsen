@@ -1,4 +1,4 @@
-# 👋 Mark K. (Igor Korotin)
+# 👋 Marq
 
 **Principal Product Architect / Technical CPO — applied-AI systems & developer platforms**
 
